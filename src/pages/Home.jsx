@@ -2,13 +2,15 @@ import React from "react";
 import Footer from '../components/Footer'
 import LinkedInIcon from '../components/icon/LinkedinIcon'
 import GithubIcon from "../components/icon/GithubIcon";
+import Projects from "./Projects"
 const Home = () => {
   return (
     <div>
-    <div style={{ padding: '2.5rem', display: 'flex', justifyContent: 'space-between' , paddingTop: '0px', color: 'white'}}>
+    <div style={{ padding: '0px 96px 0px 96px', display: 'flex', justifyContent: 'space-between' , paddingTop: '0px', color: 'white'}}>
       {/* Left Section */}
       <div style={{ width: '66.6667%' }}>
-        <h1 style={{ fontSize: '6rem', fontWeight: 'bold' }}>Xuan Ho</h1>
+        <h1 style={{ fontSize: '8rem', // Equivalent to text-4xl  fontWeight: '700',   // Equivalent to font-boldcolor: 'white'       // You would need to handle dark mode with JS or a global class
+}}>Xuan Ho</h1>
         <h2 style={{ fontSize: '3rem', marginTop: '1rem' }}>Master IBM Student | Content Creator</h2>
         <p style={{ marginTop: '1rem', fontSize: '1.125rem' }}>
         Master's student specializing in IBM (International Business Management), 
@@ -133,17 +135,18 @@ const Home = () => {
         <div style={{ marginTop: '1rem' }}>
           <div style={{ marginBottom: '1rem' }}>
             <h4 style={{ fontSize: '1.25rem', fontWeight: '600' }}> Seinäjoki University Of Applied Science</h4>
-            <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>Master of Business Administration - MBA, International Business Management </p>
-            <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>2022 - 2024</p>
+            <p style={{ fontSize: '20px'}}>Master of Business Administration - MBA, International Business Management </p>
+            <p style={{ fontSize: '20px', color: '#6b7280' }}>2022 - 2024</p>
           </div>
           <div style={{ marginBottom: '1rem' }}>
-            <h4 style={{ fontSize: '1.25rem', fontWeight: '600' }}>FPT University</h4>
-            <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>Bachelor of Business Administration - BBA, Business, Management, Marketing, and Related Support Services</p>
-            <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>2013 - 2017</p>
+            <h4 style={{fontWeight: '600' }}>FPT University</h4>
+            <p style={{ fontSize: '20px'}}>Bachelor of Business Administration - BBA, Business, Management, Marketing, and Related Support Services</p>
+            <p style={{ ffontSize: '40px', color: '#6b7280' }}>2013 - 2017</p>
           </div>
         </div>
       </div>
     </div>
+    <Projects/>
     <Footer/>
     </div>
   );
