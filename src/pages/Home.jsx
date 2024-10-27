@@ -3,15 +3,15 @@ import Footer from '../components/Footer'
 import LinkedInIcon from '../components/icon/LinkedinIcon'
 import GithubIcon from "../components/icon/GithubIcon";
 import Projects from "./Projects"
+import ProjectCard from "../components/ProjectCard";
 const Home = () => {
   return (
     <div>
     <div style={{ padding: '0px 96px 0px 96px', display: 'flex', justifyContent: 'space-between' , paddingTop: '0px', color: 'white'}}>
       {/* Left Section */}
       <div style={{ width: '66.6667%' }}>
-        <h1 style={{ fontSize: '8rem', // Equivalent to text-4xl  fontWeight: '700',   // Equivalent to font-boldcolor: 'white'       // You would need to handle dark mode with JS or a global class
-}}>Xuan Ho</h1>
-        <h2 style={{ fontSize: '3rem', marginTop: '1rem' }}>Master IBM Student | Content Creator</h2>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold dark:text-white __className_48fc68" >Xuan Ho</h1>
+        <h2 className="text-lg sm:text-xl lg:text-xl mt-1 dark:text-grey-400">Master IBM Student | Content Creator</h2>
         <p style={{ marginTop: '1rem', fontSize: '1.125rem' }}>
         Master's student specializing in IBM (International Business Management), 
         focused on developing expertise in <strong> global business strategies </strong>, <strong>  digital transformation </strong>, and <strong> leadership </strong> in the tech-driven economy.
@@ -20,7 +20,6 @@ const Home = () => {
           I enjoy taking cooking, traveling, and music. 
         
         </p>
-
 
         {/* Experience Section */}
         <h3 style={{ fontSize: '1.875rem', fontWeight: 'bold', marginTop: '2.5rem' }}>Experience</h3>
@@ -97,13 +96,14 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
 
       {/* Right Section */}
       <div style={{ width: '33.3333%', marginTop: '2.5rem', paddingLeft: '2.5rem' }}>
         {/* Contact Details */}
         <div style={{ marginBottom: '1.5rem' }}>
-          <p style={{ fontSize: '1.125rem' }}>xuanho@gmail.com</p>
-          <p style={{ fontSize: '1.125rem' }}>Seinäjoki, Finland</p>
+          <a href="mailto:xuanho@gmail.com" className="mb-2 block transition duration-300 dark:hover:text-white dark:hover:opacity-100 hover:opacity-60"> xuanho@gmail.com</a>
+          <p style={{  fontSize: '24px', color: '#D1D5DB' }}>Seinäjoki, Finland</p>
 
           {/* Social Icons */}
           <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
@@ -118,12 +118,8 @@ const Home = () => {
           {["Content Creator", "Social Media", "Tiktok Marketing", "Content Strategy"].map((skill, index) => (
             <span
               key={index}
-              style={{
-                backgroundColor: '#e5e7eb',
-                padding: '0.25rem 0.75rem',
-                borderRadius: '9999px',
-                fontSize: '0.875rem'
-              }}
+              
+              className="bg-gray-200 transition duration-500 cursor-grab hover:bg-gray-300 hover:scale-105 dark:bg-slate-700 dark:hover:bg-slate-600 dark:hover:text-gray-50  rounded-md inline-block px-2 py-1 mb-2 text-sm"
             >
               {skill}
             </span>

@@ -16,7 +16,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div style={{ padding: '2.5rem' }}>
+    <div style={{ padding: '2.5rem' , color: 'white'}}>
       <h2 style={{ fontSize: '1.875rem', fontWeight: 'bold' }}>Projects</h2>
       <div
         style={{

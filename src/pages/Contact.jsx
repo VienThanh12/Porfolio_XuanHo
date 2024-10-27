@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', color: 'white' }}>
       <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>Contact</h1>
       <p style={{ fontSize: '1.25rem', textAlign: 'center', marginBottom: '1.5rem' }}>
         I'm currently looking for new opportunities. If you have a project or just want to say hi, feel free to contact me.
@@ -10,7 +10,7 @@ const Contact = () => {
       <p style={{ fontSize: '1.125rem', textAlign: 'center', marginBottom: '1.5rem' }}>
         You can drop me an email at{" "}
         <a href="mailto:jimtran98@gmail.com" style={{ color: '#3b82f6', textDecoration: 'underline' }}>
-          jimtran98@gmail.com
+        xuanho@gmail.com
         </a>{" "}
         or find me on social media platforms. I'll get back to you as soon as possible.
       </p>

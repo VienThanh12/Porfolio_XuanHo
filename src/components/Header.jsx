@@ -26,6 +26,7 @@ const Header = () => {
           margin: '0 auto',
           paddingLeft: '6rem',
           paddingRight: '6rem',
+          
         }}
       >
         <div
@@ -47,7 +48,7 @@ const Header = () => {
             onMouseEnter={() => setHovered('home')}
             onMouseLeave={() => setHovered(null)}
           >
-            <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>home</Link>
+            <Link to="/" style={{ color: '#CBD5E1', textDecoration: 'none' , fontSize: '30px'}}>home</Link>
           </p>
 
           <p
@@ -60,22 +61,10 @@ const Header = () => {
             onMouseEnter={() => setHovered('projects')}
             onMouseLeave={() => setHovered(null)}
           >
-            <Link to="/projects" style={{ color: 'inherit', textDecoration: 'none' }}>projects</Link>
+            <Link to="/projects" style={{ color: '#CBD5E1', textDecoration: 'none' , fontSize: '30px'}}>projects</Link>
           </p>
 
-          <p
-            style={{
-              position: 'relative',
-              transition: 'all 0.2s ease',
-              paddingBottom: '0.5rem',
-              borderBottom: hovered === 'photos' ? '2px solid white' : 'none',
-            }}
-            onMouseEnter={() => setHovered('photos')}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <Link to="/photos" style={{ color: 'inherit', textDecoration: 'none' }}>photos</Link>
-          </p>
-
+         
           <p
             style={{
               position: 'relative',
@@ -86,7 +75,7 @@ const Header = () => {
             onMouseEnter={() => setHovered('contact')}
             onMouseLeave={() => setHovered(null)}
           >
-            <Link to="/contact" style={{ color: 'inherit', textDecoration: 'none' }}>contact</Link>
+            <Link to="/contact" style={{ color: '#CBD5E1', textDecoration: 'none' , fontSize: '30px'}}>contact</Link>
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <Router>
-      <div style={{ minHeight: '100vh', backgroundColor: '#0F172A' }}>
+      <div style={{ minHeight: '100vh', backgroundColor: '#0F172A'}}>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
